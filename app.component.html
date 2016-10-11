@@ -1,4 +1,8 @@
-<h1>My App</h1>
+<h1>Hero Finder</h1>
+
+<input ng-model="$ctrl.query" />
+
+<hero-list heroes="$ctrl.heroes" search-value="$ctrl.query"></hero-list>
 
 <app-error>
   Error!
@@ -7,7 +11,3 @@
 <app-error>
   Another Error!
 </app-error>
-
-<input ng-model="$ctrl.query" />
-
-<hero-list heroes="$ctrl.heroes" search-value="$ctrl.query"></hero-list>
