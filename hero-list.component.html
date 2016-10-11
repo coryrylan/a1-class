@@ -1,0 +1,9 @@
+<ul>
+  <li ng-repeat="hero in $ctrl.heroes | filter:$ctrl.searchValue">
+    <h3>{{hero.name}}</h3>
+    <div ng-style="{'color': hero.color}">Favorite Color</div>
+
+    <input type="color" ng-model="hero.color" />
+    <button ng-click="$ctrl.sayHello(hero)">Say Hello</button>
+  </li>
+</ul>
