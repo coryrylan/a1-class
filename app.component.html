@@ -1,13 +1,18 @@
-<h1>Hero Finder</h1>
+<header>
+  <nav class="top-nav">
+    <div class="container">
+      <div class="nav-wrapper"><a ng-href="#/" class="page-title">Star Wars Heroes</a></div>
+    </div>
+  </nav>
+</header>
 
-<input ng-model="$ctrl.query" />
+<div class="container">
+  <ng-view></ng-view>
+</div>
 
-<hero-list heroes="$ctrl.heroes" search-value="$ctrl.query"></hero-list>
-
-<app-error>
-  Error!
-</app-error>
-
-<app-error>
-  Another Error!
-</app-error>
+<footer class="page-footer">
+  <div class="container">
+    <a href="#/about" class="grey-text text-lighten-3">About</a>
+  </div>
+  <br />
+</footer>

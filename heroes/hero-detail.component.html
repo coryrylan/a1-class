@@ -1,0 +1,24 @@
+<br />
+
+<app-spinner ng-if="!$ctrl.hero"></app-spinner>
+
+<div ng-if="$ctrl.hero" class="row">
+  <h1>{{$ctrl.hero.name}}</h1>
+  <div class="col s4">
+    <img ng-src="{{$ctrl.hero.img}}" class="full-width" />
+  </div>
+  <div class="col s8">
+    <dl>
+      <dt>Height</dt>
+      <dd>{{$ctrl.hero.height}}</dd>
+      <dt>Mass</dt>
+      <dd>{{$ctrl.hero.mass}}</dd>
+      <dt>Hair Color</dt>
+      <dd>{{$ctrl.hero.hair_color}}</dd>
+      <dt>Eye Color</dt>
+      <dd>{{$ctrl.hero.eye_color}}</dd>
+      <dt>Gender</dt>
+      <dd>{{$ctrl.hero.gender}}</dd>
+    </dl>
+  </div>
+</div>

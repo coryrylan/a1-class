@@ -14,7 +14,7 @@
   angular.module('app')
     .component('appError', {
       transclude: true,
-      templateUrl: "error.component.html",
+      templateUrl: 'shared/error.component.html',
       controller: ErrorController
     });
 })();

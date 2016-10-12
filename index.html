@@ -4,19 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>My First Angular 1 App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link rel="stylesheet" href="app.css" />
 </head>
 
 <body ng-app="app">
+
   <app-root>
     Loading...
   </app-root>
+
   <script src="../lib/angular/angular.js"></script>
+  <script src="../lib/angular-route/angular-route.js"></script>
   <script src="./app.js"></script>
+  <script src="./app.routes.js"></script>
   <script src="./app.component.js"></script>
-  <script src="./error.component.js"></script>
-  <script src="./hero-list.component.js"></script>
-  <script src="./hero-item.component.js"></script>
-  <script src="./hero.service.js"></script>
+  <script src="./home/home.component.js"></script>
+  <script src="./about/about.component.js"></script>
+  <script src="./shared/hero.service.js"></script>
+  <script src="./shared/error.component.js"></script>
+  <script src="./shared/spinner.component.js"></script>
+  <script src="./heroes/hero-list.component.js"></script>
+  <script src="./heroes/hero-item.component.js"></script>
+  <script src="./heroes/hero-detail.component.js"></script>
 </body>
 
 </html>
